@@ -1,0 +1,47 @@
+# ==========================================
+# Intel Quartus Prime - .gitignore
+# ==========================================
+
+# Bases de datos del proyecto y archivos temporales
+db/
+incremental_db/
+greybox_tmp/
+slp_flow/
+*.kpt
+*.hif
+
+# Archivos de salida (Reportes, logs y bitstreams)
+output_files/
+*.rpt
+*.summary
+*.smsg
+*.map
+*.fit
+*.pin
+*.jdi
+*.sld
+*.done
+*.qdf
+
+# Archivos de programación (Bitstreams)
+# Comenta estas líneas si necesitas incluir el bitstream final en el repo
+*.sof
+*.pof
+*.jam
+*.jbc
+*.rbf
+*.ekp
+
+# Configuraciones de interfaz y usuario local
+*.qws
+*.csf
+
+# Archivos de simulación (Questa/ModelSim)
+# Nota: Guarda tus testbenches (.vht, .vhd) en una carpeta separada (ej. /src o /test) 
+# para que no sean ignorados si Quartus limpia este directorio.
+simulation/
+*.vcd
+*.vwf
+
+# Archivos temporales de Platform Designer / Qsys (si usas IPs)
+.qsys_edit/
